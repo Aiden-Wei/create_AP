@@ -50,7 +50,7 @@ def check_io():#key1
             count = 0
         time.sleep(0.1)
         
-def flash_led():#yellow
+def flash_led():#led2
     global flash_delay
     global pi
     state = 0
@@ -68,7 +68,7 @@ def flash_led():#yellow
                 state = 0
         time.sleep(flash_delay)
 
-def state_led():#bule
+def state_led():#led1
     global pi
     count = 0
     pi.set_mode(23, pigpio.OUTPUT)
